@@ -1,0 +1,27 @@
+<html><head>
+<meta charset="utf-8">
+<title>List</title></head>
+<body>
+<p>清單</p>
+<hr />
+<table width="600" border>
+	<tr>
+		<th>產品名稱</th>
+		<th>價格</th>
+		<th>數量</th>
+		<th>刪除</th>
+	</tr>
+	{% for rec in data %}
+	<tr>
+		<td >{{ rec.name }}</td>
+		<td >${{ rec.price }}</td>
+		<td >{{ rec.count }}</td>
+		<td >
+			<a href="/delete/{{ rec.name }}" style="text-decoration: none;">刪除</a>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+<a href="/">go home</a>
+</body></html>
+
