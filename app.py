@@ -6,6 +6,7 @@ from dbUtils import getList, getM_List, addtocar, getC_List, delC_List
 app = Flask(__name__, static_folder='static',static_url_path='/')
 #set a secret key to hash cookies
 app.config['SECRET_KEY'] = '123TyU%^&'
+#edit by user A
 #edit by user B
 #define a function wrapper to check login session
 def login_required(f):
